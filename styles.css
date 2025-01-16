@@ -1,0 +1,248 @@
+/* General Styles */
+
+  
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('bgft.jpg') no-repeat center center/cover;
+    height: 100vh;
+    font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: center; /* Centers navbar content */
+    align-items: center;
+    padding-top: 20px; /* Adds padding to the top */
+    background-color: transparent; /* Removes background color */
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .nav-links li a:hover {
+    color: #ff6f61; /* Change this color to whatever you prefer */
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding-top: 150px;
+     /* Takes full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+  }
+  
+  .hero h1 {
+    font-size: 5rem;
+    font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  }
+  
+  .hero .date {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .time-box h2 {
+    font-size: 2rem;
+  }
+  
+  .buttons a {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #fa5151;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 11px;
+    font-size: large;
+    margin-left: 40px;
+  }
+  .buttons a:hover{
+    background-color:  #f83e3e;
+  }
+  
+/* Events Section */
+.events {
+  margin-top: 100px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 1); /* Dark transparent background */
+  color: #fff;
+  text-align: center;
+  border-radius: 15px; /* Rounded edges for the section */
+}
+
+.events h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.event-scroll {
+  display: flex;
+  justify-content: space-evenly; /* Ensures even spacing between cards */
+  gap: 20px;
+  flex-wrap: wrap; /* Allows wrapping of cards on smaller screens */
+}
+
+.event-card {
+  width: 300px; /* Adjust card width */
+  height: 300px; /* Adjust card height */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(133, 133, 133, 0.6); /* Soft shadow for better visibility */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align the button at the bottom */
+}
+
+.event-card .register-btn {
+  position: static; /* Position it normally within the card */
+  background-color: #fa5151;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 20px; /* Adds spacing from the bottom of the card */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.event-card .register-btn:hover {
+  background-color: #fff;
+  color: #fa5151;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .event-card {
+    width: 100%;
+  }
+
+  .event-scroll {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+  
+  /* Scroll Animation */
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .countdown{
+    background-color: #fff;
+    color: black;
+     justify-content:space-evenly;
+     border-radius: 15px;
+  }
+
+  /* About Section */
+.about {
+  padding: 50px 20px;
+  background: url('bg2ft.jpg') no-repeat center center/cover; /* Replace with your about background image */
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  margin: 30px 0;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Contacts Section */
+.contacts {
+  padding: 50px 20px;
+  background: url('bg2ft.jpg') no-repeat center center/cover; /* Replace with your contacts background image */
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.contacts h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contacts p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.contacts a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fa5151;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contacts a:hover {
+  background-color: #fff;
+  color: #fa5151;
+}
