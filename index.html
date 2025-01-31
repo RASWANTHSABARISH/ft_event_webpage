@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -15,7 +15,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#events">Events</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#payment">Payment</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -25,9 +25,11 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
       <div class="hero-content">
-        <h3 class="dpt">Department Food Technology presents</h3>
+        <h4 class="clg">Kongu Engineering College,Perundurai</h4>
+        <h3 class="dpt">Food Technology association presents- National level technical symposium</h3>
+        
         <h1>ZELOS 2K25!</h1>
-        <p class="date">Event Date: 13th March 2025</p>
+        <p class="date">Event Date: 14th March 2025</p>
         <div class="countdown">
           <div class="time-box">
             <h2 id="days">00 </h2>
@@ -47,8 +49,8 @@
           </div>
         </div>
         <div class="buttons">
-          <a href="#" class="btn register-btn">Register</a>
-          <a href="#" class="btn know-more-btn">Know More</a>
+          <a href="#events" class="btn register-btn">Register</a>
+          <a href="#about" class="btn know-more-btn">Know More</a>
         </div>
       </div>
     </section>
@@ -86,6 +88,22 @@
         </div>
       </section>
     </center>
+    
+    <section id="payment" class="payment">
+      <h2 class="ed">Payment Details</h2>
+      <p class="de">Scan the QR code below to make a payment:</p>
+      <img src="payment.jpg" alt="QR Code" class="qr-code">
+      <p class="de"><strong>Send a screenshot of the payment to this WhatsApp number: 9899999999</strong></p>
+    </section>
+    
+    <section id="food" class="food">
+      <h2>Food and Accommodation</h2>
+      <p>
+        Food and accommodation will be provided by us for the event. Simply fill out the respective forms to avail of these services.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSelk-OD5HUppn_0k9ZTIVYbkQmeOLRM6jqLOr6xKHikigYCzA/viewform?usp=sharing">Food</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeICa-ABqUPQtfWatRDA43Fr5IFIzYH-SDsKj2j3DDskrnsoA/viewform?usp=sharing">Accommodation</a>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -104,14 +122,14 @@
         Have questions or want to know more about the event? Reach out to us at 
         any time. We are here to assist you.
       </p>
-      <a href="+91 6381161520">+91 6381161520</a>
-      <a href="+91 9655122755">+91 9655122755</a>
+      <a href="+91 6381161520">+91 6381161520</a>
+      <a href="+91 9655122755">+91 9655122755</a>
     </section>
   </main>
 
   <script>
     // Countdown Timer
-    const eventDate = new Date("2025-03-13T00:00:00").getTime();
+    const eventDate = new Date("2025-03-14T00:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();

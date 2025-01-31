@@ -59,11 +59,13 @@ body {
   }
   
   .hero h1 {
-    font-size: 5rem;
-    font-family: "Playwrite IN", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
+    font-size: 8rem;
+    font-family: "Italianno", serif;
+  font-weight: 400;
   font-style: normal;
+  font-optical-sizing: auto;
+  
+  
   }
   
   .hero .date {
@@ -98,7 +100,7 @@ body {
   
 /* Events Section */
 .events {
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 40px;
   background: rgba(0, 0, 0, 1); /* Dark transparent background */
   color: #fff;
@@ -243,6 +245,67 @@ body {
 }
 
 .contacts a:hover {
+  background-color: #fff;
+  color: #fa5151;
+}
+.payment {
+  background:  rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.qr-code {
+  width: 200px;
+  height: 270px;
+  margin-top: 10px;
+}
+.ed {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.de {
+  font-size: 1.2rem;
+}
+
+.food {
+  margin-top: 30px;
+  padding: 50px 20px;
+  background: url('bg2ft.jpg') no-repeat center center/cover; /* Replace with your contacts background image */
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.food h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.food p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.food a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fa5151;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.food a:hover {
   background-color: #fff;
   color: #fa5151;
 }
