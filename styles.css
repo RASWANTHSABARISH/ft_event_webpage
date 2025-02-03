@@ -311,3 +311,7 @@ body {
   background-color: #fff;
   color: #fa5151;
 }
+.hero h1 {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
